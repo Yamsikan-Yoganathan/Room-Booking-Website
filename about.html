@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <title>About</title>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html"> Deluxe</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">booking</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="profile">
+          <i class="fa-solid fa-circle-user"></i>
+            <div class="dropdown-content">
+                <a href="#">Favourite</a>
+                <a href="#">My Account</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+    </nav>
+    <video id="about-background-video" autoplay loop muted poster="background-about">
+        <source src="about_video.mp4" type="video/mp4">
+    </video>
+    <div class="about-banner">
+        <div class="about-head">
+          <h1>About Page</h1>
+          <h3>MORE ABOUT OUR WEBSITE</h3>
+        </div>
+    </div>
+    <div class="about-hotel">
+        <h2>About the website</h2>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cons, adipisci velit, sed quia non numquam eius modi ullma tempora incidunt ut labore et dolore magnam aliquam quaerat fruitr voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem. Itaque earum rerum hic tea sapiente delectus, ut aut reiciendis voluptatibus Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium minima veniam</p>
+    </div>
+
+    <div class="about-hotel-mission">
+        <h2>Our mission</h2>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, cons, adipisci velit, sed quia non numquam eius modi ullma tempora incidunt ut labore et dolore magnam aliquam quaerat fruitr voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem. Itaque earum rerum hic tea sapiente delectus, ut aut reiciendis voluptatibus Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <ul>
+            <li>Excepteur sint occaecat cupidatat non proident.</li>
+            <li>At vero eos accusamus iusto odio dignissimos.</li>
+            <li>Quis autem vel eum iure reprehende qui in ea.</li>
+        </ul>
+        
+    </div>
+
+
+    <div id="container">
+        <div id="slider-container">
+          <span onclick="slideRight()" class="btn"></span>
+            <div id="slider">
+              <div class="slide">
+                <p><i class="fa-solid fa-quote-left"></i><br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem nam laboriosam libero aut sunt quasi accusamus neque vero itaque nisi esse sunt."</p> 
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+              </div>
+              <div class="slide"><p><i class="fa-solid fa-quote-left"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem nam laboriosam libero aut sunt quasi accusamus neque vero itaque nisi esse sunt."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="slide"><p><i class="fa-solid fa-quote-left"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem nam laboriosam libero aut sunt quasi accusamus neque vero itaque nisi esse sunt."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <div class="slide"><p><i class="fa-solid fa-quote-left"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem nam laboriosam libero aut sunt quasi accusamus neque vero itaque nisi esse sunt."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <div class="slide"><p><i class="fa-solid fa-quote-left"></i><br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure voluptatem nam laboriosam libero aut sunt quasi accusamus neque vero itaque nisi esse sunt."</p>
+                <div class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+          </div>
+          <span onclick="slideLeft()" class="btn"></span>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="contain">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Trams and Condition</a></li>
+                        <li><a href="#">Contract Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><a href="#">Colombo,Srilanka</a></li>
+                        <li><a href="#">0770650732</a></li>
+                        <li><a href="#">yamsikan.20210238@iit.ac.lk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/yoga.yamsi"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yo_yamsi/"><i class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/yamsikan-yoganathan-4a0435164"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="about.js"></script>
+<script src="https://kit.fontawesome.com/f4b764b7a1.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

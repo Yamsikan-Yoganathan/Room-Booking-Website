@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <title>Booking</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="logo"><a href="index.html"> Deluxe</a></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">booking</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!-- <i class="fa-solid fa-circle-user"></i> -->
+        <i class="fa-solid fa-star"></i>
+      </nav>
+
+      <div class="booking-form">
+        <form action="">
+
+            <div class="form-sec">
+                <!--- Sri Lanka states -->
+                <select id="country-state" name="country-state">
+                    <option>city</option>
+                    <option value="Anuradhapura District">Anuradhapura District</option>
+                    <option value="Colombo District">Colombo District</option>
+                    <option value="Galle District">Galle District</option>
+                    <option value="Jaffna District">Jaffna District</option>
+                    <option value="Kandy District">Kandy District</option>
+                    <option value="Kilinochchi District">Kilinochchi District</option>
+                    <option value="Mannar District">Mannar District</option>
+                    <option value="Matale District">Matale District</option>
+                    <option value="Mullaitivu District">Mullaitivu District</option>
+                    <option value="Nuwara Eliya District">Nuwara Eliya District</option>
+                    <option value="Puttalam District">Puttalam District</option>
+                    <option value="Trincomalee District">Trincomalee District</option>
+                    <option value="Vavuniya District">Vavuniya District</option>
+                </select>
+                <!-- <label for="city">City</label> -->
+            </div>  
+
+            <div class="form-sec">
+              <select id="room-type">
+                  <option>Room type</option>
+                  <option>Hotel</option>
+                  <option>Annex</option>
+                  <option>House</option>
+                  <option>Flat</option>
+                </select>
+            </div>
+
+            <div class="form-sec">
+                <input type="text" id="datepicker-Arrive" placeholder="Arrive">
+                <!-- <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;</label> -->
+              </div>
+
+              <div class="form-sec">
+                <input type="text" id="datepicker-Depature" placeholder="Depature">
+                <!-- <label for="arrive" class="label-date"><i class="fa fa-calendar"></i>&nbsp;&nbsp;</label> -->
+              </div>
+
+              <div class="form-sec">
+                <select id="room-bed">
+                    <option>Bedroom</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                  </select>
+              </div>
+
+              <div class="form-sec">
+                <input type="text" name="postcode area" id="postcode-area" placeholder="postcode area">
+              </div>
+
+              <div class="form-sec">
+                <select id="room-price">
+                    <option>price</option>
+                    <option value="0$ - 50$">0$ - 50$</option>
+                    <option value="5$ - 100$">5$ - 100$</option>
+                    <option value="100$ - 200$">100$ - 200$</option>
+                  </select>
+              </div>
+
+              <div class="form-sec">
+                <a id ="btn-search" onclick="showBtn()" href="#">search</a>
+              </div>
+        </form>
+
+        <div class="btn">
+          <a href="#">View Favourite</a>
+          <a href="#">Remove Favourite</a>
+        </div>
+      </div>
+
+      <div class="container-property">
+        <div id="properties" class ="properties">
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="contain">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>QUICK LINKS</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="booking.html">booking</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>LEGAL</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Trams and Condition</a></li>
+                        <li><a href="#">Contract Me</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>CONTACT US</h4>
+                    <ul>
+                        <li><a href="#">Colombo,Srilanka</a></li>
+                        <li><a href="#">0770650732</a></li>
+                        <li><a href="#">yamsikan.20210238@iit.ac.lk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/yoga.yamsi"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/yo_yamsi/"><i class="fab fa-instagram"></i></a>
+                        <a href="www.linkedin.com/in/yamsikan-yoganathan-4a0435164"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+<script src="booking.js"></script> 
+<script src="https://kit.fontawesome.com/f4b764b7a1.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
